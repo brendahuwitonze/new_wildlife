@@ -8,12 +8,12 @@ public class EndangeredAnimalsTest {
     @Rule
     public DatabaseRule databaseRule=new DatabaseRule ();
     public EndangeredAnimals setNewEngeredAnimal(){
-        return new EndangeredAnimals ("zebra","endagered","health","10");
+        return new EndangeredAnimals ("zebra","health","10");
 
     }
     @Test
     public void allAnimalClassest(){
-        DatabaseManagement testAnimal=new EndangeredAnimals ("zebra","Engered","health","10");
+        DatabaseManagement testAnimal=new EndangeredAnimals ("zebra","health","10");
         assertEquals (true, testAnimal instanceof EndangeredAnimals);
     }
     @Test

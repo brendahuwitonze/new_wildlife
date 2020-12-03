@@ -25,18 +25,18 @@ private Animals testAnimal;
         Animals testAnimal=setNewAnimal ();
         assertEquals("zebra", testAnimal.getName());
     }
-    @Test
-    public void getId_animalInstantiatesWithId(){
-          Animals testAnimal=setNewAnimal ();
-            testAnimal.save ();
-        assertTrue(testAnimal.getId() > 0);
-        }
+//    @Test
+//    public void getId_animalInstantiatesWithId(){
+//          Animals testAnimal=setNewAnimal ();
+//            testAnimal.save ();
+//        assertTrue(testAnimal.getId() > 0);
+//        }
 
-    @Test
-    public void getType_animalInstantiatesWithType_Type() {
-        Animals testAnimal=setNewAnimal ();
-        assertEquals("Non-endangered", testAnimal.getType());
-    }
+//    @Test
+//    public void getType_animalInstantiatesWithType_Type() {
+//        Animals testAnimal=setNewAnimal ();
+//        assertEquals("Non-endangered", testAnimal.getType());
+//    }
 //    @Test
 //    public void findById() {
 //        Animals testAnimal=setNewAnimal();
