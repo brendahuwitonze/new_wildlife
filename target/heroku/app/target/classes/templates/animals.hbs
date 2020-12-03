@@ -1,0 +1,19 @@
+{{#partial "content"}}
+    <div class="views animals">
+        {{#if animals}}
+            {{#each animals as |animals|}}
+                <div class="card text-white  mb-3" style="width: 18rem;background-color:rgb(109, 63, 3);">
+                    <div class="card-body">
+                        <p class="card-title">{{animals.name}}</p>
+
+                    </div>
+                </div>
+            {{/each}}
+        {{else}}
+            <h2>No animals! Create some animals <a href="/create/animal">here</a></h2>
+        {{/if}}
+
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}

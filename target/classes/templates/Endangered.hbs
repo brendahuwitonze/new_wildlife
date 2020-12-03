@@ -1,0 +1,22 @@
+{{#partial "content"}}
+    <div class="views Endangeredanimals">
+        <div class="row">
+        {{#if Endangered}}
+            {{#each Endangered as |Endangered|}}
+                <div class="card text-white  mb-3" style="width: 18rem;background-color:rgb(109, 63, 3);">
+                    <div class="card-body">
+                        <h5 class="card-title">{{Endangered.name}}</h5>
+                        <p class="card-text">{{Endangered.health}}</p>
+                        <p class="card-text">{{Endangered.age}}</p>
+
+                    </div>
+                </div>
+            {{/each}}
+        {{else}}
+            <h2>No animals! Create some animals <a href="/create/Endangeredanimal">here</a></h2>
+        {{/if}}
+
+    </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

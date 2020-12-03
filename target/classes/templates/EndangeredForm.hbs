@@ -1,0 +1,57 @@
+{{#partial "content"}}
+    <div class="form">
+        <form action="/create/Endangeredanimal/new" method="post">
+            <h1>Create EndageredAnimal</h1>
+            {{#if endangered}}
+
+                <div class="input-group input-group-sm mb-3 namepush" >
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                    </div>
+                    <input type="text" class="" id="name" name="name" placeholder="Input Name..." required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="health">Health</label>
+                        </div>
+                        <select class="custom-select" id="health" name="health">
+                            <option selected>Choose...</option>
+                            {{#if health }}
+                                {{#each health as |h|}}
+                                    <option name="health" value={{h}}>{{h}}</option>
+                                {{/each}}
+
+                            {{/if}}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="age">Age</label>
+                        </div>
+                        <select class="custom-select" id="age" name="age">
+                            <option selected>Choose...</option>
+                            {{#if age }}
+                                {{#each age as |a|}}
+                                    <option name="age" value={{a}}>{{a}}</option>
+                                {{/each}}
+
+                            {{/if}}
+                        </select>
+                    </div>
+                </div>
+            {{else}}
+                <div class="form-group">
+                       <h2>Your form was sucefully created</h2>
+                    </div>
+            {{/if}}
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg"> Create </button>
+            </div>
+
+        </form>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

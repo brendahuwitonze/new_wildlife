@@ -1,0 +1,79 @@
+
+body{
+     background-image: url("/images/zebra.jpeg");
+     background-size:cover;
+     color:blanchedalmond;
+
+}
+
+nav a{
+    font-size:1.2em;
+    margin-right:30px;
+
+}
+
+
+
+.head{
+    width:50%;
+    margin:auto;
+    letter-spacing:10px;
+    margin-top:270px;
+
+}
+
+.form{
+   background-color:rgb(109, 63, 3);
+    width:50%;
+    margin:auto;
+    margin-top:50px;
+    padding-left:10%;
+    text-align:center;
+}
+hr{
+ background-color:blanchedalmond;
+}
+.form-group{
+    width:60%;
+    margin:auto;
+    margin-top:30px;
+    font-size:1.8em;
+}
+.container-fluid{
+    background-color:rgb(109, 63, 3);
+}
+.namepush{
+margin-left:20%;
+}
+
+
+
+.container-fluid {
+
+     width:700px;
+     margin-top:60px;
+
+}
+.container-fluid li{
+    font-size:1.2em;
+}
+.entries a{
+    margin-right:30px
+}
+.views.animals{
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.card{
+    margin-right:20px;
+}
+.views.sightings{
+    margin-left:20%;
+    margin-right:20%;
+    background-color:rgba(0,0,0,0.67);
+}
+.animals{
+margin-top:70px;
+margin-left:20%;
+}

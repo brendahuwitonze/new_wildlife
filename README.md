@@ -7,7 +7,7 @@ Wildlife Tracker is an app that allows one to record sightings of various animal
 ![IMAGE](src/main/resources/public/images/pro.png)
 [Link to the project](/home/brendah/Downloads/new_wildlife/src/main/resources/public/images/pro.png)
 
-[wildlife_tracker](  https://wildlifebrendah.herokuapp.com/)
+[wildlife_tracker](https://newwildlifebrendah.herokuapp.com/)
 
 ## setup of the database
 In PSQL:

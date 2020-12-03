@@ -1,0 +1,31 @@
+{{#partial "content"}}
+    <div class="form ">
+        <form action="/create/ranger/new" method="post">
+            <h1>Create Ranger</h1>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                </div>
+                <input type="text" class=""  id="name" name="name" placeholder="Input Name..." required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Badge Number</span>
+                </div>
+                <input type="text" class=""  id="badge" name="badge" placeholder="Input Badge Number..."required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">phoneNumber</span>
+                </div>
+                <input type="text" class=""  id="phone" name="phone" placeholder="Input phone Number..."required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg"> Create </button>
+            </div>
+        </form>
+    </div>
+
+{{/partial}}
+{{> layout.hbs}}
