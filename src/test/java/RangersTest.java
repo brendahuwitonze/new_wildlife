@@ -14,16 +14,26 @@ public class RangersTest {
         assertEquals (true, ranger instanceof Rangers);
     }
 
+    @Test
+    public void getName() {
+        Rangers testAnimal=setNewRanger ();
+        assertEquals("bress", testAnimal.getName());
+    }
+    @Test
+    public void getbadge() {
+        Rangers testAnimal=setNewRanger ();
+        assertEquals("1", testAnimal.getBadge_number());
+    }
+    @Test
+    public void getPhone() {
+        Rangers testAnimal=setNewRanger ();
+        assertEquals("0787123456", testAnimal.getPhone_number());
+    }
+
     private Rangers setNewRanger (){
         return new Rangers ("bress", "1", "0787123456");
     }
-//    @Test
-//    public void Saved() {
-//        Rangers ranger= setNewRanger();
-//        ranger.save();
-//        assertTrue(Rangers.all().get(0).equals(ranger));
-//
-//    }
+
 @Test
 public void empty() {
     Rangers ranger=new Rangers("","","0783245673");
