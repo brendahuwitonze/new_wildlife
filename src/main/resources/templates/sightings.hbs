@@ -1,13 +1,13 @@
 {{#partial "content"}}
     <div class="views sightings">
 
-        <h1>Sightings</h1>
+        <h1 style="text-align:center;">Sightings</h1>
 
 
-        <div class="card m-2" style="background-color:rgb(109, 63, 3);">
+        <div class=" row" >
 
             {{#if sightings}}
-                <div class="col-md-3">
+                <div class="col-md-7">
                     <h3>Time</h3>
                     {{#each sightings as |s|}}
                         <h3>{{s.time}}</h3>
